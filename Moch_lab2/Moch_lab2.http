@@ -1,0 +1,6 @@
+@Moch_lab2_HostAddress = http://localhost:5000
+
+GET {{Moch_lab2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  heat-simulation:
+    image: heat-simulation-service
+    ports:
+      - "5000:80"
+    networks:
+      - heat-network
+
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    networks:
+      - heat-network
+
+networks:
+  heat-network:
+    driver: bridge
